@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "Poppins" serif;
+}
+html{
+    height: 100vh;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e1538;
+    height: 55%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    padding: 20px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 70%;
+    border: 5px soliid white;
+}
+#gameZone{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90%;
+    width: 80%;
+}
+h1{
+    color: white;
+    font-size: 70px;
+    font-family: "Island Moments", serif;
+    letter-spacing: 20px;
+    text-align: center;
+    margin-top: -300px;
+}
+.cls{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 70%;
+    /*background-color: aquamarine;*/
+    margin-top: -100px;
+    padding: 20px;
+}
+#word{
+    font-size: 25px;
+    font-weight: bold;
+    /*border-color: darkblue;**/
+    text-align: center;
+    width: 100%;
+    letter-spacing: 25px;
+}
+.label{
+    font-size: 28px;
+    font-weight: 200px;
+    letter-spacing: 5px;
+}
+#input-letter{
+    outline: none;
+    background-color: #0e1538;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: "Poppins" serif;
+    letter-spacing: 5px;
+}
+
+button, .replay{
+    outline: none;
+    background-color: #0e1538;
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Poppins" serif;
+    letter-spacing: 5px;
+    border: 1px solid white;
+}
+.replay{
+    height: 50px;
+    width: 400px;
+    margin-left: -650px;
+    font-family: "Poppins" serif;
+    font-size: 25px;
+}
+.neon-box{
+    box-shadow: 0 0 10px rgba(255, 0, 255, .5),
+                        0 0 20px rgba(255, 0, 255, 0.7),
+                        0 0 30px rgba(255, 0, 255, 0.5);
+    animation: neno 1.5s infinite alternate;
+}
+
+@keyframes neno {
+    0%{
+        box-shadow: 0 0 20px rgba(238, 255, 0, 0.7);
+    }
+
+    100%{
+        box-shadow: 0 0 30px rgb(9, 255, 0);
+    }
+}
+.tentative{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.disc{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 5px
+}
+.replay{
+    margin-top: 10px;
+}
+
+.hide{
+    visibility: hidden;
+}
+.red{
+    color: red;
+}
+.green{
+    color: rgb(129, 204, 17);
+}
+.blue{
+    color: orange;
+}
+
+.information{
+    background-color: #020929;
+    width: 650px;
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.8;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.information .cat{
+    color: blue;
+}
+
+@media screen and (max-width: 740px) {
+    .information{
+        margin-bottom: -20px;
+    }
+    h1{
+        font-size: 50px;
+        letter-spacing: 5px;
+        margin-bottom: 20px;
+    }
+    .disc{
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 1px
+    }
+    .tentative{
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 1px
+    }
+    .label{
+        font-size: 16px;
+        font-weight: 300px;
+        letter-spacing: 1px
+    }
+    #input-letter{
+        height: 25px;
+        width: 110px;
+        text-align: center;
+        border-radius: 5px;
+        letter-spacing: 1px
+    }
+    
+    button{
+        height: 30px;
+        width: 110px;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 15px;
+        cursor: pointer;
+        letter-spacing: 1px;
+        padding: 1px;
+    }
+    .information{
+        width: 410px;
+        height: 130px;
+    }
+    #gameZone{
+        height: 100%;
+        width: 100%;
+    }
+    .replay{
+        height: 40px;
+        width: 300px;
+        margin-left: -250px;
+        font-family: "Poppins" serif;
+        font-size: 25px;
+    }
+    #message{
+        font-size: 15px;
+    }
+    .timeDsp{
+        color: red;
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+@media screen and  (min-width: 740px) and (max-width: 1350px) {
+   h1{
+    
+    margin-top: 10px;
+   }
+    .vs{
+        display: none;
+    }
+}
+.vs{
+    margin-top: -100px;
+    margin-left: -1050px;
+    width: 30%;
+}
+td, tr{
+    border: 1px solid white;
+    text-align: center;
+    padding: 10px;
+}
+
+table{
+    border: 1px solid white;
+    width: 70%;
+}
+.timeDsp{
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -20px;
+}
+.correct{
+    color: greenyellow;
+}
