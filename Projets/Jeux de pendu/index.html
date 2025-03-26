@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="pendu.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Jeux du Pendu</title>
+</head>
+<body>
+    <section class="vs">
+        <table class="neon-box">
+            <tr>
+                <th style="width: 100%;">
+                    Performance du joueur
+                </th>
+            </tr>
+            <tr>
+                <td>Nombre de jeux jouer</td>
+                <td class="game-Played"></td>
+            </tr>
+            <tr>
+                <td>Nombre de jeux gagné</td>
+                <td class="game-Won"></td>
+            </tr>
+            <tr>
+                <td>Nombre de jeux perdu</td>
+                <td class="game-Lost"></td>
+            </tr>
+            <tr>
+                <td>Taux de réussite globale</td>
+                <td class="sucess"></td>
+            </tr>
+        </table>
+    </section>
+    
+    <h1>Jeux du Pendu</h1>
+    <section id="zone"> 
+        <div id="gameZone">
+            <p class="timeDsp"></p>
+            <p class="disc">Deviner le mot caché</p>
+            <p id="word"></p>
+            <p class="label">Tapez une lettre</p>
+            <input type="text" id="input-letter" autocomplete="off" autofocus>
+            <button id="submit-btn">Done</button>
+            <p class="tentative">Tentatives restant: <span id="tentatives-nbr"></span></p>
+        </div>
+        <button class="replay hide neon-box">Rejouer</button>
+    </section>
+    <div class="information">
+        <p id="message"></p>
+        <p class="cat"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

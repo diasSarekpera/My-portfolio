@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Island+Moments&family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100vh;
+}
+body{
+    background-color: #0e1538;
+}
+body{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /*background: url("https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/sunset-over-rouen-pb-photography.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+.clock{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 55%;
+    height: 10%;
+}
+.clock span{
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    font-family: Kaushan Script,  serif;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+@media (max-width: 740px) {
+    .clock span{
+        font-size: 40px;
+        font-weight: 300;
+        font-family: Kaushan Script,  serif;
+        margin-top: 20px;
+    }
+    img{
+        width: 180px;
+    }
+}
