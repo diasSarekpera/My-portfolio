@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100vh;
+}
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #adb7ec;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.chono, .Minuteur{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 70%;
+    width: 30%;
+    border: none;
+    border-radius: 10px;
+    padding: 0px 15px;
+    background-color: white;
+}
+h2{
+    font-weight: 300px;
+    font-size: 35px;
+    text-transform: uppercase;
+    color: blue;
+    letter-spacing: 5px;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.btn button{
+    outline: none;
+    border: 2px solid #3498db;;
+    padding: 10px;
+    font-size: 14px;
+    width: 30%;
+    background-color: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #576fe9;
+}
+.chono_display, .timer-display{
+    font-size: 25px;
+    letter-spacing: 8px;
+}
+.ip{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+}
+#minutes, #seconds{
+    height: 35%;
+    width: 45%;
+    border: 2px solid #3498db;;
+    background-color: inherit;
+    color: green;
+    text-align: center;
+    border-radius: 4px;
+    outline: none;
+}
+.btn2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.btn2 button{
+    outline: none;
+    border: 2px solid #3498db;;
+    padding: 10px;
+    font-size: 14px;
+    width: 35%;
+    background-color: inherit;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #576fe9;
+}
+button{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    transition: 0.4s;
+}
+button:hover{
+    background-color: blue;
+}
+
+@media screen and (max-width: 740px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    html{
+        height: 200vh;
+    }
+    .chono, .Minuteur{
+        height: 60%;
+        width: 80%;
+        margin: 50px 50px;
+    }
+}
+
+@media screen and (min-width: 741px) and (max-width: 1000px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    html{
+        height: 200vh;
+    }
+    .chono, .Minuteur{
+        height: 80%;
+        width: 50%;
+        margin: 50px 50px;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    html{
+        height: 200vh;
+    }
+    .chono, .Minuteur{
+        height: 90%;
+        width: 40%;
+        margin: 50px 50px;
+    }
+}
