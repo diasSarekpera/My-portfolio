@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Métadonnées essentielles -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio de Dias SARE KPERA - Développeur Front-End passionné, créant des sites web modernes, élégants et performants pour entreprises et particuliers.">
+        <meta name="author" content="Dias SARE KPERA">
+
+        <!-- Titre -->
+        <title>Dias SARE KPERA | Développeur Front-End</title>
+
+        <!-- Feuille de style principale -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&family=Roboto:wght@400;500;700&family=Merriweather:wght@300;400;700&family=Marcellus&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+        <!-- Icônes Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-buH1o2h+..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Balises Open Graph (SEO & réseaux sociaux) -->
+        <meta property="og:title" content="Portfolio - Dias SARE KPERA">
+        <meta property="og:description" content="Découvrez mes projets et mes compétences en développement web Front-End.">
+        <meta property="og:image" content="./assets/images/02_hero/portrait.png">
+        <meta property="og:url" content="https://dskportfolio.onrender.com">
+        <meta property="og:type" content="website">
+
+        <!-- Balises Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Portfolio - Dias SARE KPERA">
+        <meta name="twitter:description" content="Développeur Front-End passionné, créant des sites modernes et élégants.">
+        <meta name="twitter:image" content="./assets/images/02_hero/portrait.png">
+
+        <link rel="icon" href="./assets/icons/favicon/favicon.ico?v=2" type="image/x-icon">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./css/home/01_main.css">
+    </head>
+    <body>
+        <!-- ===============================
+            SECTION: Hero
+        =============================== -->
+        <section class="hero" id="hero" role="banner" aria-label="Section de présentation">
+            <!-- ===== HEADER ===== -->
+            <header class="hero-header">
+                <!-- Logo -->
+                <div class="brand">
+                    <a href="#hero" aria-label="Retour à l'accueil">
+                        <img src="./assets/images/01_logo/logo.png" alt="Logo Dias SARE KPERA" class="brand-logo" />
+                    </a>
+                </div>
+        
+                <!-- Navigation desktop -->
+                <nav class="desktop-nav" aria-label="Navigation principale">
+                    <ul class="desktop-menu">
+                        <li><a href="#about">Qui suis-je ?</a></li>
+                        <!--<li><a href="#projects">Projets</a></li>-->
+                        <li><a href="#skills">Compétences</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+        
+                <!-- Réseaux sociaux -->
+                <ul class="social-network-icons" aria-label="Mes réseaux sociaux">
+                    <li><a href="https://www.facebook.com/profile.php?id=100092275017016" aria-label="Twitter" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://wa.me/22940260611" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="#" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+        
+                <!-- Burger -->
+                <button class="burger-menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </header>
+        
+            <!-- ===== MENU MOBILE ===== -->
+            <nav class="mobile-nav" aria-label="Menu mobile">
+                <ul id="mobile-menu" class="mobile-menu" hidden>
+                    <li style="--order:0;"><a href="#about">Qui suis-je ?</a></li>
+                    <li style="--order:1;"><a href="#projects">Projets</a></li>
+                    <li style="--order:2;"><a href="#skills">Compétences</a></li>
+                    <li style="--order:3;"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        
+            <!-- ===== HERO CONTENT ===== -->
+            <div class="hero-content container">
+                <!-- Texte + CTA -->
+                <div class="cta-wrapper">
+                    <h1 class="hero-title">
+                        Un site web moderne et <span class="highlight">impactant</span> pour votre entreprise
+                    </h1>
+                    <p class="hero-subtitle">
+                        Je suis Dias SARE KPERA, développeur web Front-End. J'aide les marques et les professionnels à se démarquer en ligne grâce à des sites vitrines élégants, rapides et soigneusement conçus.
+                    </p>
+                    <div class="cta-buttons-wrapper">
+                        <a href="#about" class="btn hero-btns btn-primary">En savoir plus</a>
+                        <a href="#contact" class="btn hero-btns btn-outline">Contactez-moi</a>
+                    </div>
+                </div>
+            
+                <!-- Avatar -->
+                <div class="avatar-wrapper" aria-hidden="false">
+                    <img src="./assets/images/02_hero/portrait.png" alt="Portrait Dias SARE KPERA" class="avatar" />
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============================
+            SECTION: about
+        =============================== -->
+        <section class="about-section section-animate" id="about">
+            <div class="about-container">
+          
+                <!-- Colonne gauche : Photo -->
+                <div class="about-photo fade-item">
+                    <img src="./assets/images/03_about/photo.png" alt="Photo de Dias SARE KPERA">
+                </div>
+          
+                <!-- Colonne droite : Contenu -->
+                <div class="about-content">
+
+                    <div class="about-title-container fade-item">
+                        <!-- Titre -->
+                        <h2 class="about-title">QUI SUIS-JE ?</h2>
+                        <div class="about-title-underline"></div>
+                    </div>
+
+                    <!-- Description -->
+                    <p class="about-description fade-item" lang="fr">
+                        Je suis Dias SARE KPERA, développeur web Front-End passionné par le design et la performance. <br>
+                        Je crée des sites vitrines sur mesure, esthétiques et optimisés, conçus pour valoriser l'image et la crédibilité de chaque projet. <br>
+                        Ma mission : transformer chaque idée en une expérience digitale mémorable.
+                    </p>
+
+                    <!-- Cartes d'infos -->
+                    <div class="about-cards">
+
+                        <div class="about-card fade-item">
+                            <h3><i class="fas fa-code"></i> Compétences</h3>
+                            <p>HTML, CSS, JS. Interfaces modernes et fluides.</p>
+                        </div>
+                        
+                        <div class="about-card fade-item">
+                            <h3><i class="fa fa-crosshairs"></i> Objectif</h3>
+                            <p>Créer des expériences digitales performantes et esthétiques.</p>
+                        </div>
+                        
+                        <div class="about-card fade-item">
+                            <h3><i class="fas fa-key"></i> Valeurs</h3>
+                            <p>Innovation, rigueur et passion au service du code.</p>
+                        </div>
+                        
+                        <div class="about-card fade-item">
+                            <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                            <p>Esprit d'équipe, communication et adaptabilité.</p>
+                        </div>
+
+                    </div>
+  
+
+                    <!-- Bouton -->
+                    <div class="about-button fade-item">
+                        <a href="#competences" class="btn">Découvrir mes compétences ➡️</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============================
+            SECTION: Skills
+        =============================== -->
+        <section class="skills-section section-animate" id="skills">
+            <div class="skills-container">
+        
+                <!-- Titre -->
+                <div class="skills-title-container fade-item">
+                    <h2 class="skills-title section-title"> <span class="star">✦</span> Expertises  <span class="star">✦</span></h2>
+                    <div class="skill-title-underline"></div>
+                </div>
+        
+                <!-- Cartes des compétences -->
+                <div class="skills-cards">
+        
+                    <!-- Carte 1 : Design & Front-End -->
+                    <div class="skill-card fade-item">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Design & Front-End</h3>
+                        <p>Conception d'interfaces élégantes, intuitives et responsives, adaptées aux besoins des clients.</p>
+                        <ul>
+                            <li><span class="puce">✔</span> HTML5 / CSS3 pour un code propre et performant</li>
+                            <li><span class="puce">✔</span> JavaScript (ES6+) pour des interactions fluides</li>
+                            <li><span class="puce">✔</span> Frameworks Front-End (React, Vue) pour des expériences modernes</li>
+                        </ul>
+                    </div>
+        
+                    <!-- Carte 2 : Expérience Utilisateur & SEO -->
+                    <div class="skill-card fade-item">
+                        <i class="fas fa-user-friends"></i>
+                        <h3>Expérience Utilisateur & SEO</h3>
+                        <p>Optimisation UX et SEO pour que chaque site vitrine attire et engage les visiteurs efficacement.</p>
+                        <ul>
+                            <li><span class="puce">✔</span> Navigation fluide et design ergonomique</li>
+                            <li><span class="puce">✔</span> Structure SEO-friendly</li>
+                            <li><span class="puce">✔</span> Optimisation vitesse et performance</li>
+                        </ul>
+                    </div>
+        
+                    <!-- Carte 3 : Outils & Workflow -->
+                    <div class="skill-card fade-item">
+                        <i class="fas fa-tools"></i>
+                        <h3>Outils & Workflow</h3>
+                        <p>Utilisation d'outils modernes et bonnes pratiques pour livrer des projets propres et fiables.</p>
+                        <ul>
+                            <li><span class="puce">✔</span> Git / GitHub pour versioning et collaboration</li>
+                            <li><span class="puce">✔</span> VS Code / Environnements de développement modernes</li>
+                            <li><span class="puce">✔</span> Tests, CI/CD et déploiements sécurisés</li>
+                        </ul>
+                    </div>
+        
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============================
+            SECTION: Projects
+        =============================== 
+        <section class="projects-section section-animate" id="projects">
+            <div class="projects-container">
+
+                <!-- Titre 
+                <div class="projects-title-container fade-item">
+                    <h2 class="projects-title section-title"> <span class="star">✦</span> Projets <span class="star">✦</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Grille des projets 
+                <div class="projects-grid">
+
+                    <!-- Projet 1 : L&DDYNAMICS 
+                    <div class="project-card fade-item">
+                        <div class="project-image">
+                            <img src="./assets/images/04_project/mockup1.png" alt="Site vitrine L&DDYNAMICS">
+                        </div>
+                        <div class="project-content">
+                            <h3>L&DDYNAMICS - Entreprise Tech</h3>
+                            <p>Site moderne et responsive pour une entreprise tech spécialisée en solutions digitales et IoT.</p>
+                            <a href="#" class="btn-project">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 2 : GreenLife 
+                    <div class="project-card fade-item">
+                        <div class="project-image">
+                            <img src="./assets/images/04_project/mockup2.png" alt="Landing page GreenLife">
+                        </div>
+                        <div class="project-content">
+                            <h3>GreenLife - Landing Page Écologique</h3>
+                            <p>Landing page épurée et moderne pour une startup écologique.</p>
+                            <a href="#" class="btn-project">Voir le projet</a>
+                        </div>
+                    </div>
+
+                    <!-- Projet 3 : TravelEase
+                    <div class="project-card fade-item">
+                        <div class="project-image">
+                            <img src="./assets/images/04_project/mockup3.png" alt="Site vitrine TravelEase">
+                        </div>
+                        <div class="project-content">
+                            <h3>TravelEase - Site Vitrine Agence de Voyage</h3>
+                            <p>Site vitrine responsive avec design premium pour une agence de voyage moderne.</p>
+                            <a href="#" class="btn-project">Voir le projet</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>-->
+
+        <!-- ===============================
+            SECTION: témoignages
+        =============================== -->
+        <section class="testimonials-section section-animate" id="temoignages">
+            <div class="testimonials-container">
+              <div class="testimonials-title-container fade-item">
+                <h2 class="testimonials-title section-title">
+                  <span class="star">✦</span> Avis & Retours <span class="star">✦</span>
+                </h2>
+                <div class="title-underline"></div>
+              </div>
+          
+              <div class="testimonials-slider fade-item" id="testimonials-slider">
+                <!-- Carte Témoignage -->
+                <div class="testimonial-card">
+                  <div class="testimonial-avatar">
+                    <img src="https://sharpfocusphoto.com/wp-content/uploads/2014/12/altorro-actor-0854.jpg" alt="Photo client">
+                  </div>
+                  <div class="testimonial-content">
+                    <p class="testimonial-text">
+                      "Excellent travail ! Le site est moderne, rapide et parfaitement adapté à mes besoins."
+                    </p>
+                    <h4 class="testimonial-name">Mamadou Traoré</h4>
+                    <span class="testimonial-role">Entrepreneur, NovaTech</span>
+                  </div>
+                </div>
+          
+                <div class="testimonial-card">
+                  <div class="testimonial-avatar">
+                    <img src="https://i.pinimg.com/736x/13/37/f8/1337f8213306e4fee48c6a18a0748aa3.jpg" alt="Photo client">
+                  </div>
+                  <div class="testimonial-content">
+                    <p class="testimonial-text">
+                      "Une collaboration fluide et professionnelle. Le rendu final dépasse mes attentes."
+                    </p>
+                    <h4 class="testimonial-name">Sarah Djossou</h4>
+                    <span class="testimonial-role">Fondatrice, GreenLine</span>
+                  </div>
+                </div>
+          
+                <div class="testimonial-card">
+                  <div class="testimonial-avatar">
+                    <img src="https://i.pinimg.com/originals/15/06/80/1506806cb672e0b78b1c8a236fde026b.jpg" alt="Photo client">
+                  </div>
+                  <div class="testimonial-content">
+                    <p class="testimonial-text">
+                      "Dias a livré un site élégant et fonctionnel, avec une vraie touche de créativité."
+                    </p>
+                    <h4 class="testimonial-name">Alain Akapko</h4>
+                    <span class="testimonial-role">Consultant, VisionPro</span>
+                  </div>
+                </div>
+          
+                <button class="testimonial-nav prev">&#10094;</button>
+                <button class="testimonial-nav next">&#10095;</button>
+              </div>
+            </div>
+        </section>
+
+        <!-- ==================
+            SECTION CONTACT
+        ================== -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+            <!-- Titre -->
+            <header class="section-header">
+                <h2 class="section-title">
+                <span class="star">✦</span> ME CONTACTER <span class="star">✦</span>
+                </h2>
+                <hr class="separator" />
+            </header>
+        
+            <!-- Informations -->
+            <div class="contact-info">
+                <div class="info-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Adresse</h3>
+                <p>Cotonou, Bénin</p>
+                </div>
+                <div class="info-card">
+                <i class="fas fa-phone"></i>
+                <h3>Téléphone</h3>
+                <p>+229 01 91 15 19 44</p>
+                </div>
+                <div class="info-card">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>diassarekpera@gmail.com</p>
+                </div>
+            </div>
+        
+            <!-- Formulaire -->
+            <form id="contact-form" class="contact-form" method="post" action="#">
+                <div class="form-group">
+                  <label for="name"><i class="fas fa-user"></i></label>
+                  <input type="text" id="name" name="name" placeholder="Votre nom complet" required />
+                </div>
+              
+                <div class="form-group">
+                  <label for="email"><i class="fas fa-at"></i></label>
+                  <input type="email" id="email" name="email" placeholder="Votre adresse email" required />
+                </div>
+              
+                <div class="form-group">
+                  <label for="message"><i class="fas fa-pen"></i></label>
+                  <textarea id="message" name="message" rows="6" placeholder="Écrivez votre message ici..." required></textarea>
+                </div>
+              
+                <button type="submit" class="btn-submit" id="send-btn">
+                  <i class="fas fa-paper-plane"></i> Envoyer le message
+                </button>
+              
+                <!-- Zone pour afficher les messages -->
+                <p id="form-message" class="form-message"></p>
+              </form>
+              
+            </div>
+        </section>
+
+        <!-- ===============================
+            FOOTER
+        =============================== -->
+        <footer class="site-footer" id="footer" role="contentinfo">
+            <div class="footer-container container">
+        
+            <!-- Footer Top -->
+            <div class="footer-top">
+                <!-- Bloc 1 : Logo + Coordonnées -->
+                <div class="footer-brand">
+                    <img src="./assets/images/01_logo/logo.png" alt="Logo de Dias Portfolio" class="footer-logo">
+            
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <span>Cotonou, Bénin</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                            <span>+229 01 91 15 19 44</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <span>diassarekpera@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+        
+                <!-- Bloc 2 : Liens Menu -->
+                <nav class="footer-nav" aria-label="Navigation du pied de page">
+                    <h3 class="footer-title">Navigation</h3>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#skills">Compétences</a></li>
+                        <!--<li><a href="#projects">Projets</a></li>-->
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+        
+                <!-- Bloc 3 : Anecdote -->
+                <div class="footer-note">
+                    <h3 class="footer-title">Le saviez-vous ?</h3>
+                    <p>
+                        90% des utilisateurs quittent un site si son design n'est pas moderne.  
+                        Un site élégant et optimisé, c'est la clé d'une bonne image de marque !
+                    </p>
+                </div>
+            </div>
+        
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright">
+                &copy; 2025 Dias SARE KPERA. Tous droits réservés.
+                </p>
+        
+                <ul class="footer-social">
+                    <li><a href="https://www.facebook.com/profile.php?id=100092275017016" aria-label="Twitter" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://wa.me/22940260611" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="#" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        
+            </div>
+        </footer>
+
+        <!-- ===============================
+            BOUTON WHATSAPP
+        =============================== -->
+        <a href="https://wa.me/22940260611" 
+            class="whatsapp-float" 
+            target="_blank" 
+            aria-label="Contactez-nous sur WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+
+        <!-- ===============================
+            JAVASCRIPT
+        =============================== -->
+        <script src="./js/anime.js"></script>
+        <script src="./js/slider.js"></script>
+        <script src="./js/burger.js"></script>
+
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script src="./js/msg.js"></script>
+    </body>
+</html>
+
+
+
