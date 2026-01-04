@@ -30,11 +30,16 @@
 }
 
 .title-underline {
-  width: 70px;
-  height: 5px;
-  background: var(--blue); /* ta couleur premium */
-  border-radius: 3px;
   margin: 0.5rem auto 1rem auto;
+  width: 70px;
+  height: 3px;
+  background: linear-gradient(
+      90deg,
+      transparent,
+      var(--blue),
+      transparent
+  );
+  opacity: 0.85;
 }
 
 /* ===== Slider ===== */
@@ -109,8 +114,8 @@
 
 /* Avatar */
 .testimonial-avatar img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid var(--blue);

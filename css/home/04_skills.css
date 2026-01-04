@@ -34,12 +34,16 @@
 }
 
 .skill-title-underline {
-  width: 90px;
-  height: 5px;
-  border-radius: 3px;
-  margin: 0 auto;
-  background-color: var(--blue);
-  margin-top: 0.8rem;
+  margin: 0.5rem auto 1rem auto;
+  width: 70px;
+  height: 3px;
+  background: linear-gradient(
+      90deg,
+      transparent,
+      var(--blue),
+      transparent
+  );
+  opacity: 0.85;
 }
 
 /* ===== Cartes ===== */
