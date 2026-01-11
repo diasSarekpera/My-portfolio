@@ -1,0 +1,510 @@
+/* =========================================================
+   HERO — BASE
+========================================================= */
+.hero {
+  position: relative;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  background:
+    radial-gradient(circle at top left, rgba(0,153,255,0.08), transparent 45%),
+    linear-gradient(180deg, rgba(0,0,0,0.05), rgba(0,0,0,0.15)),
+    var(--color-primary);
+
+  color: var(--color-secondary);
+  font-family: 'Marcellus', sans-serif;
+  z-index: 0;
+}
+/*
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  bottom: -75rem;
+  left: -16rem;
+  background: url("../../assets/images/02_hero/wave1.png") no-repeat center bottom;
+  background-size: cover;
+  pointer-events: none;
+  z-index: -1;
+}
+*/
+
+/* =========================================================
+   HEADER
+========================================================= */
+.hero-header {
+  position: relative;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem 2rem;
+  background: var(--color-primary);
+  backdrop-filter: blur(10px) saturate(160%);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+
+  animation: header-reveal .7s ease both;
+}
+
+.hero-header::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 92%;
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0,153,255,0.25),
+    rgba(0,153,255,0.45),
+    rgba(0,153,255,0.25),
+    transparent
+  );
+}
+
+@keyframes header-reveal {
+  from { opacity: 0; filter: blur(6px); }
+  to   { opacity: 1; filter: none; }
+}
+
+.brand-logo {
+  max-height: 56px;
+  display: block;
+  filter: drop-shadow(0 3px 12px rgba(0,0,0,0.55));
+  transition: transform .3s ease;
+}
+
+.brand-logo:hover {
+  transform: scale(1.05);
+}
+
+
+/* =========================================================
+   NAVIGATION DESKTOP
+========================================================= */
+.desktop-menu {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.desktop-menu li {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: menu-fade-in .6s ease forwards;
+}
+
+.desktop-menu li:nth-child(1) { animation-delay: .3s; }
+.desktop-menu li:nth-child(2) { animation-delay: .4s; }
+.desktop-menu li:nth-child(3) { animation-delay: .5s; }
+.desktop-menu li:nth-child(4) { animation-delay: .6s; }
+
+.desktop-menu a {
+  position: relative;
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: .3px;
+}
+
+.desktop-menu a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  transform: translateX(-50%);
+  background: var(--color-accent);
+  transition: width .3s ease;
+}
+
+.desktop-menu a:hover {
+  color: var(--color-accent);
+}
+
+.desktop-menu a:hover::after {
+  width: 50%;
+}
+
+@keyframes menu-fade-in {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* =========================================================
+   SOCIAL ICONS
+========================================================= */
+.social-network-icons {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.social-network-icons a {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1rem;
+  color: var(--color-secondary);
+  background: rgba(255,255,255,0.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+
+  transition: transform .3s ease, background .3s ease;
+}
+
+.social-network-icons a:hover {
+  background: var(--color-accent);
+  transform: translateY(-3px) scale(1.08);
+}
+
+
+/* =========================================================
+   BURGER MENU — STRUCTURE
+========================================================= */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger-menu span {
+  width: 26px;
+  height: 3px;
+  background: var(--color-secondary);
+  border-radius: 3px;
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+.burger-menu.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px,5px);
+}
+.burger-menu.open span:nth-child(2) {
+  opacity: 0;
+}
+.burger-menu.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px,-6px);
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+.hero-content {
+  position: relative;
+  z-index: 10;
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: fade-up .9s ease forwards;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.cta-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.hero-title {
+  max-width: 20ch;
+  font-size: clamp(2rem, 4.2vw, 3.1rem);
+  line-height: 1.15;
+  font-weight: 500;
+  letter-spacing: -0.8px;
+  font-family: 'Marcellus', sans-serif;
+}
+
+.hero-subtitle {
+  max-width: 60ch;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+.highlight {
+  color: var(--color-accent);
+}
+
+
+/* =========================================================
+   CTA BUTTONS
+========================================================= */
+.cta-buttons-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  position: relative;
+  overflow: hidden;
+
+  padding: .75rem 1.4rem;
+  border-radius: 12px;
+
+  font-weight: 700;
+  letter-spacing: .3px;
+  text-decoration: none;
+
+  box-shadow: 0 6px 18px rgba(3,6,23,0.28);
+  transition: .25s ease, box-shadow .25s ease;
+}
+
+.btn-primary {
+  background: var(--color-accent);
+  color: var(--color-primary);
+  box-shadow: 0 8px 24px rgba(212,175,55,0.35);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+}
+
+.btn-outline:hover {
+  background: var(--color-accent);
+  color: var(--color-primary);
+}
+
+
+/* =========================================================
+   AVATAR
+========================================================= */
+.avatar-wrapper {
+  display: flex;
+  justify-content: center;
+  animation: avatar-fade .9s ease forwards;
+}
+
+@keyframes avatar-fade {
+  from { opacity: 0; transform: scale(.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.avatar {
+  width: clamp(180px, 32vw, 420px);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+
+  border-radius: 50%;
+  border: 3px solid rgba(0,153,255,.2);
+  box-shadow: 0 0 10px rgba(0,153,255,.25);
+
+  transition: transform .4s ease, box-shadow .4s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0,153,255,.35);
+}
+
+
+/* =========================================================
+   HERO — RESPONSIVE (MOBILE & TABLET)
+   À AJOUTER À LA FIN
+========================================================= */
+
+/* ---------- TABLET & MOBILE ---------- */
+@media (max-width: 1024px) {
+
+  /* ===== HEADER ===== */
+  .desktop-nav,
+  .social-network-icons {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  /* ===== MENU MOBILE ===== */
+  .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 2rem 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    background: var(--color-primary);
+    box-shadow: 0 12px 30px rgba(0,0,0,.35);
+  }
+
+  .mobile-menu a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-secondary);
+  }
+
+  /* ===== HERO CONTENT ===== */
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 3.5rem 1.5rem 4rem;
+    gap: 3rem;
+  }
+
+  /* ===== AVATAR ===== */
+  .avatar-wrapper {
+    order: -1;
+  }
+
+  .avatar {
+    width: clamp(220px, 55vw, 320px);
+    margin-bottom: 1rem;
+  }
+
+  /* ===== TEXTE ===== */
+  .cta-wrapper {
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  .hero-title {
+    max-width: 18ch;
+    font-size: clamp(2rem, 7vw, 2.6rem);
+    line-height: 1.2;
+  }
+
+  .hero-subtitle {
+    max-width: 48ch;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  /* ===== CTA ===== */
+  .cta-buttons-wrapper {
+    justify-content: center;
+  }
+
+  /* Cache le bouton secondaire */
+  .cta-buttons-wrapper .btn-outline {
+    display: none;
+  }
+}
+
+
+/* ---------- MOBILE SMALL ---------- */
+@media (max-width: 480px) {
+
+  .hero-header {
+    padding: 1rem 1.2rem;
+  }
+
+  .hero-content {
+    padding: 3rem 1.2rem 3.5rem;
+  }
+
+  .hero-title {
+    font-size: 2.1rem;
+  }
+
+  .avatar {
+    width: 240px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE MENU — ANIMATION & STATES
+========================================================= */
+
+.mobile-nav {
+  position: relative;
+  z-index: 90;
+}
+
+/* état fermé */
+.mobile-menu {
+  opacity: 0;
+  transform: translateY(-12px);
+  pointer-events: none;
+  transition: opacity .35s ease, transform .35s ease;
+}
+
+/* état ouvert */
+.mobile-menu.is-open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* animation stagger des liens */
+.mobile-menu li {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: none;
+}
+
+.mobile-menu.is-open li {
+  animation: mobile-link-fade .4s ease forwards;
+  animation-delay: calc(var(--order) * 0.08s);
+}
+
+@keyframes mobile-link-fade {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================================
+   MOBILE MENU — BACKDROP
+========================================================= */
+
+.mobile-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 14, 25, 0.45);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .35s ease;
+  z-index: 80;
+}
+
+.mobile-backdrop.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* =========================================================
+   SCROLL LOCK
+========================================================= */
+
+body.menu-open {
+  overflow: hidden;
+}
+
+
+
+

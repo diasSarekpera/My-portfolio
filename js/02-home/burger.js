@@ -1,41 +1,44 @@
-// ===============================
-//  MENU MOBILE TOGGLE SCRIPT
-// ===============================
+const burger = document.querySelector('.burger-menu');
+const mobileMenu = document.getElementById('mobile-menu');
+const backdrop = document.querySelector('.mobile-backdrop');
+const body = document.body;
 
-document.addEventListener("DOMContentLoaded", () => {
-  const burger = document.querySelector(".burger-menu");
-  const mobileNav = document.querySelector(".mobile-nav");
-  const mobileMenu = document.querySelector(".mobile-menu");
-  const body = document.body;
+function openMenu() {
+  burger.classList.add('open');
+  burger.setAttribute('aria-expanded', true);
 
-  // Sécurité : vérifier que les éléments existent
-  if (!burger || !mobileNav || !mobileMenu) return;
-
-  // Toggle du menu
-  burger.addEventListener("click", () => {
-    const isOpen = burger.classList.toggle("open");
-
-    // Ouvre ou ferme le menu mobile
-    mobileNav.classList.toggle("open", isOpen);
-    mobileMenu.hidden = !isOpen;
-
-    // Accessibilité (ARIA)
-    burger.setAttribute("aria-expanded", isOpen ? "true" : "false");
-    burger.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu");
-
-    // Empêche le scroll en arrière-plan
-    body.classList.toggle("no-scroll", isOpen);
+  mobileMenu.hidden = false;
+  requestAnimationFrame(() => {
+    mobileMenu.classList.add('is-open');
+    backdrop.classList.add('is-visible');
   });
 
-  // Ferme le menu quand on clique sur un lien du menu mobile
-  mobileMenu.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      burger.classList.remove("open");
-      mobileNav.classList.remove("open");
-      mobileMenu.hidden = true;
-      burger.setAttribute("aria-expanded", "false");
-      burger.setAttribute("aria-label", "Ouvrir le menu");
-      body.classList.remove("no-scroll");
-    });
-  });
+  body.classList.add('menu-open');
+}
+
+function closeMenu() {
+  burger.classList.remove('open');
+  burger.setAttribute('aria-expanded', false);
+
+  mobileMenu.classList.remove('is-open');
+  backdrop.classList.remove('is-visible');
+
+  setTimeout(() => {
+    mobileMenu.hidden = true;
+  }, 350);
+
+  body.classList.remove('menu-open');
+}
+
+burger.addEventListener('click', () => {
+  const isOpen = burger.classList.contains('open');
+  isOpen ? closeMenu() : openMenu();
+});
+
+// clic sur backdrop = fermeture
+backdrop.addEventListener('click', closeMenu);
+
+// clic sur un lien = fermeture
+mobileMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', closeMenu);
 });

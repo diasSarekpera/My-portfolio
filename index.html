@@ -18,23 +18,25 @@
         <!-- Icônes Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-buH1o2h+..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <!-- Balises Open Graph (SEO & réseaux sociaux) -->
+        <!-- Open Graph -->
         <meta property="og:title" content="Portfolio - Dias SARE KPERA">
         <meta property="og:description" content="Découvrez mes projets et mes compétences en développement web Front-End.">
-        <meta property="og:image" content="./assets/images/02_hero/portrait.png">
+        <meta property="og:image" content="https://dskportfolio.onrender.com/assets/images/02_hero/portrait.png">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
         <meta property="og:url" content="https://dskportfolio.onrender.com">
         <meta property="og:type" content="website">
 
-        <!-- Balises Twitter Card -->
+        <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Portfolio - Dias SARE KPERA">
         <meta name="twitter:description" content="Développeur Front-End passionné, créant des sites modernes et élégants.">
-        <meta name="twitter:image" content="./assets/images/02_hero/portrait.png">
+        <meta name="twitter:image" content="https://dskportfolio.onrender.com/assets/images/02_hero/portrait.png">
 
-        <link rel="icon" href="./assets/icons/favicon/favicon.ico?v=2" type="image/x-icon">
+        <link rel="icon" href="./assets/icons/favicon/favicon.ico" type="image/x-icon">
 
         <!-- Styles -->
-        <link rel="stylesheet" href="./css/home/01_main.css">
+        <link rel="stylesheet" href="./css/home/main.css">
     </head>
     <body>
         <!-- ===============================
@@ -75,6 +77,8 @@
                 </button>
 
             </header>
+
+            <div class="mobile-backdrop" aria-hidden="true"></div>
         
             <!-- ===== MENU MOBILE ===== -->
             <nav class="mobile-nav" aria-label="Menu mobile">
@@ -357,11 +361,11 @@
         <section class="contact-section" id="contact">
             <div class="container">
             <!-- Titre -->
-            <header class="section-header">
-                <h2 class="section-title">
-                <span class="star">✦</span> ME CONTACTER <span class="star">✦</span>
+            <header class="contact-title-container">
+                <h2 class="section-title contact-title">
+                    <span class="star">✦</span> ME CONTACTER <span class="star">✦</span>
                 </h2>
-                <hr class="separator" />
+                <div class="title-underline"></div>
             </header>
         
             <!-- Informations -->
