@@ -91,6 +91,8 @@
   font-size: 1.1rem;
   color: #555;
   max-width: 650px;
+  text-align: justify;
+  hyphens: auto;
 }
 
 /* =========================
