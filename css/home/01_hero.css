@@ -507,4 +507,48 @@ body.menu-open {
 
 
 
+/* =========================================================
+   HERO — MOBILE TEXT REFINEMENT
+   (réduction effet "centrage figé")
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .hero-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .cta-wrapper {
+    width: 100%;
+    max-width: 520px; /* limite propre, pas trop large */
+  }
+
+  .hero-title,
+  .hero-subtitle {
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    max-width: 100%;
+  }
+}
+
+/* ---------- MOBILE SMALL ---------- */
+@media (max-width: 480px) {
+
+  .hero-content {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+
+  .hero-title {
+    max-width: 100%;
+    letter-spacing: -0.6px;
+  }
+
+  .hero-subtitle {
+    line-height: 1.75;
+  }
+}
 
