@@ -521,7 +521,6 @@ body.menu-open {
 
   .cta-wrapper {
     width: 100%;
-    max-width: 520px; /* limite propre, pas trop large */
   }
 
   .hero-title,
@@ -551,4 +550,5 @@ body.menu-open {
     line-height: 1.75;
   }
 }
+
 
