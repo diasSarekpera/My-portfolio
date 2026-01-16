@@ -419,7 +419,7 @@
 
 
 /* ---------- MOBILE SMALL ---------- */
-@media (max-width: 868px) {
+@media (max-width: 768px) {
 
   .hero-header {
     padding: 1rem 1.2rem;
@@ -550,19 +550,15 @@ body.menu-open {
   padding-inline: 1.5rem;
 }
 
-@media (max-width: 868px) {
+@media (max-width: 768px) {
   .hero-content.container {
     max-width: 100%;
     padding-inline: 1rem;
   }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 480px) {
   .hero-content {
     padding-inline: 1rem;
   }
 }
-
-
-
-
