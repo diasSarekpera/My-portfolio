@@ -557,11 +557,12 @@ body.menu-open {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 880px) {
   .hero-content {
     padding-inline: 1rem;
   }
 }
+
 
 
 
