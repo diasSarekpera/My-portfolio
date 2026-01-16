@@ -550,7 +550,7 @@ body.menu-open {
   padding-inline: 1.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
   .hero-content.container {
     max-width: 100%;
     padding-inline: 1rem;
@@ -562,5 +562,6 @@ body.menu-open {
     padding-inline: 1rem;
   }
 }
+
 
 
