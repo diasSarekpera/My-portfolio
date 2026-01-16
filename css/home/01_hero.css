@@ -521,6 +521,7 @@ body.menu-open {
 
   .cta-wrapper {
     width: 100%;
+    max-width: 520px; /* limite propre, pas trop large */
   }
 
   .hero-title,
@@ -548,6 +549,48 @@ body.menu-open {
 
   .hero-subtitle {
     line-height: 1.75;
+  }
+}
+
+
+
+/* =========================================================
+   FIX MOBILE — HERO + CONTAINER
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .hero-content.container {
+    padding-left: 0.8rem !important;
+    padding-right: 0.8rem !important;
+  }
+
+  .cta-wrapper {
+    width: 100%;
+    max-width: none;
+  }
+
+}
+
+
+/* =========================================================
+   FIX VIEWPORT HEIGHT — MOBILE
+========================================================= */
+
+.hero {
+  min-height: 100vh; /* fallback */
+}
+
+@supports (height: 100svh) {
+  .hero {
+    min-height: 100svh;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding-bottom: 3rem;
   }
 }
 
