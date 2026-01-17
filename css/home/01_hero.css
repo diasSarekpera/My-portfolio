@@ -562,3 +562,32 @@ body.menu-open {
     padding-inline: 1rem;
   }
 }
+
+
+/* =========================================================
+   HERO TITLE — MOBILE ADJUSTMENT (FIN)
+========================================================= */
+
+@media (max-width: 768px) {
+  .hero-title {
+    max-width: 100%;
+    font-size: clamp(1.9rem, 6.5vw, 2.4rem);
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    text-wrap: balance; /* meilleure répartition des lignes */
+  }
+
+  .hero-title .highlight {
+    display: inline-block;
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.95rem;
+    line-height: 1.3;
+    letter-spacing: -0.4px;
+  }
+}
+
