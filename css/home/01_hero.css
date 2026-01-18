@@ -568,13 +568,12 @@ body.menu-open {
    HERO TITLE — MOBILE ADJUSTMENT (FIN)
 ========================================================= */
 
-@media (max-width: 968px) {
+@media (max-width: 768px) {
   .hero-title {
     max-width: 100%;
     font-size: 1rem;
     line-height: 1.25;
     letter-spacing: -0.5px;
-    text-wrap: balance; /* meilleure répartition des lignes */
   }
 
   .hero-title .highlight {
@@ -589,6 +588,7 @@ body.menu-open {
     letter-spacing: -0.4px;
   }
 }
+
 
 
 
