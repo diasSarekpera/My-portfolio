@@ -571,7 +571,7 @@ body.menu-open {
 @media (max-width: 768px) {
   .hero-title {
     max-width: 100%;
-    font-size: clamp(1.9rem, 6.5vw, 2.4rem);
+    font-size: 1rem;
     line-height: 1.25;
     letter-spacing: -0.5px;
     text-wrap: balance; /* meilleure répartition des lignes */
@@ -590,4 +590,5 @@ body.menu-open {
     letter-spacing: -0.4px;
   }
 }
+
 
