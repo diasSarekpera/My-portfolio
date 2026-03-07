@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dskportfolio.onrender.com/sitemap.xml
